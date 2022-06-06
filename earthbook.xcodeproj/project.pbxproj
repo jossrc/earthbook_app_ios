@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4FB4C19AF2FCA7E49DA89282 /* Pods_earthbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB54CCD17B7D4E45F87053A5 /* Pods_earthbook.framework */; };
+		9CB568E4284DAC9600EB346B /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB568E3284DAC9600EB346B /* RegistroController.swift */; };
 		9CBDE034284D75080055FA7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBDE033284D75080055FA7B /* AppDelegate.swift */; };
 		9CBDE036284D75080055FA7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBDE035284D75080055FA7B /* SceneDelegate.swift */; };
 		9CBDE038284D75080055FA7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBDE037284D75080055FA7B /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		7E5FF8CABB11F00FAD5AE715 /* Pods-earthbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-earthbook.debug.xcconfig"; path = "Target Support Files/Pods-earthbook/Pods-earthbook.debug.xcconfig"; sourceTree = "<group>"; };
+		9CB568E3284DAC9600EB346B /* RegistroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
 		9CBDE030284D75080055FA7B /* earthbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = earthbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBDE033284D75080055FA7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBDE035284D75080055FA7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				9CBDE03C284D750A0055FA7B /* Assets.xcassets */,
 				9CBDE03E284D750A0055FA7B /* LaunchScreen.storyboard */,
 				9CBDE041284D750A0055FA7B /* Info.plist */,
+				9CB568E3284DAC9600EB346B /* RegistroController.swift */,
 			);
 			path = earthbook;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				7E5FF8CABB11F00FAD5AE715 /* Pods-earthbook.debug.xcconfig */,
 				E2425753B365F6A7FA88ECFC /* Pods-earthbook.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 			files = (
 				9CBDE038284D75080055FA7B /* ViewController.swift in Sources */,
 				9CBDE034284D75080055FA7B /* AppDelegate.swift in Sources */,
+				9CB568E4284DAC9600EB346B /* RegistroController.swift in Sources */,
 				9CBDE036284D75080055FA7B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
