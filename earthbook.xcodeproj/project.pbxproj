@@ -15,6 +15,7 @@
 		9CBDE03B284D75080055FA7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBDE039284D75080055FA7B /* Main.storyboard */; };
 		9CBDE03D284D750A0055FA7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBDE03C284D750A0055FA7B /* Assets.xcassets */; };
 		9CBDE040284D750A0055FA7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBDE03E284D750A0055FA7B /* LaunchScreen.storyboard */; };
+		C0F9EDD72856DE2800E37BBD /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9EDD62856DE2800E37BBD /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9CBDE03C284D750A0055FA7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBDE03F284D750A0055FA7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CBDE041284D750A0055FA7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F9EDD62856DE2800E37BBD /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CB54CCD17B7D4E45F87053A5 /* Pods_earthbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_earthbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2425753B365F6A7FA88ECFC /* Pods-earthbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-earthbook.release.xcconfig"; path = "Target Support Files/Pods-earthbook/Pods-earthbook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 				9CBDE03E284D750A0055FA7B /* LaunchScreen.storyboard */,
 				9CBDE041284D750A0055FA7B /* Info.plist */,
 				9CB568E3284DAC9600EB346B /* RegistroController.swift */,
+				C0F9EDD62856DE2800E37BBD /* HomeController.swift */,
 			);
 			path = earthbook;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CBDE038284D75080055FA7B /* ViewController.swift in Sources */,
+				C0F9EDD72856DE2800E37BBD /* HomeController.swift in Sources */,
 				9CBDE034284D75080055FA7B /* AppDelegate.swift in Sources */,
 				9CB568E4284DAC9600EB346B /* RegistroController.swift in Sources */,
 				9CBDE036284D75080055FA7B /* SceneDelegate.swift in Sources */,
@@ -361,6 +365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = earthbook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = earthbook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
