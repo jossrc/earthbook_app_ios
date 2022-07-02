@@ -274,6 +274,9 @@
                                         <state key="normal" title="Mantenimiento Libro">
                                             <color key="titleColor" red="0.24982088799999999" green="0.67868143319999996" blue="0.53682649140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="rcJ-Nb-AWi" kind="show" id="yuG-th-qdR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -405,6 +408,157 @@
             </objects>
             <point key="canvasLocation" x="3945" y="-344"/>
         </scene>
+        <!--Lista Libros View Controller-->
+        <scene sceneID="97d-dB-pnF">
+            <objects>
+                <tableViewController id="rcJ-Nb-AWi" customClass="ListaLibrosViewController" customModule="earthbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VUr-7m-tvA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellLibro" rowHeight="133" id="uL9-jN-zds" customClass="LibroViewCell" customModule="earthbook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="133"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uL9-jN-zds" id="gC9-C3-M58">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="etl-6E-Pbv">
+                                            <rect key="frame" x="20" y="11" width="69" height="111"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="69" id="TRs-aY-56X"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Whw-ts-thZ">
+                                            <rect key="frame" x="105" y="11" width="285" height="111"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAV-ny-7Nn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="285" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2x-TG-c9o">
+                                                    <rect key="frame" x="0.0" y="54" width="285" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.5" id="9nq-Xo-osK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6Y-1E-bFL">
+                                                    <rect key="frame" x="0.0" y="90.5" width="285" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.5" id="4xU-Th-Ky3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="etl-6E-Pbv" firstAttribute="leading" secondItem="gC9-C3-M58" secondAttribute="leadingMargin" id="5Sb-tj-U9H"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Whw-ts-thZ" secondAttribute="bottom" id="Grp-qW-k4w"/>
+                                        <constraint firstItem="etl-6E-Pbv" firstAttribute="centerY" secondItem="gC9-C3-M58" secondAttribute="centerY" id="MQX-8c-VCc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Whw-ts-thZ" secondAttribute="trailing" id="hfv-xM-z81"/>
+                                        <constraint firstItem="Whw-ts-thZ" firstAttribute="top" secondItem="gC9-C3-M58" secondAttribute="topMargin" id="r40-G4-yp0"/>
+                                        <constraint firstItem="Whw-ts-thZ" firstAttribute="leading" secondItem="etl-6E-Pbv" secondAttribute="trailing" constant="20" id="t0a-kk-cDN"/>
+                                        <constraint firstItem="etl-6E-Pbv" firstAttribute="top" secondItem="gC9-C3-M58" secondAttribute="topMargin" id="uO3-sy-izO"/>
+                                        <constraint firstItem="etl-6E-Pbv" firstAttribute="top" secondItem="Whw-ts-thZ" secondAttribute="top" id="vKq-T9-sA2"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgLibro" destination="etl-6E-Pbv" id="shH-92-iKH"/>
+                                    <outlet property="lblDescripcion" destination="I6Y-1E-bFL" id="Nwb-8U-lnb"/>
+                                    <outlet property="lblEditorial" destination="s2x-TG-c9o" id="Kuq-vj-7w1"/>
+                                    <outlet property="lblTitulo" destination="zAV-ny-7Nn" id="PYp-6x-4bK"/>
+                                    <segue destination="33Z-pV-yKI" kind="show" id="RTi-p4-4AR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rcJ-Nb-AWi" id="qUK-tp-jqs"/>
+                            <outlet property="delegate" destination="rcJ-Nb-AWi" id="bx6-5u-V9s"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bde-0W-xhj">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="P3w-IX-kyT">
+                                <connections>
+                                    <segue destination="33Z-pV-yKI" kind="show" id="Apm-ha-OEe"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="rUi-ty-5fz">
+                                <connections>
+                                    <action selector="actualizarLibro:" destination="rcJ-Nb-AWi" id="YA3-IH-QY5"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yNF-2y-dTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2369.5652173913045" y="793.52678571428567"/>
+        </scene>
+        <!--Crud Libro View Controller-->
+        <scene sceneID="DIH-sX-YpY">
+            <objects>
+                <viewController id="33Z-pV-yKI" customClass="CrudLibroViewController" customModule="earthbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MME-r0-7rv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xi8-Ur-Uvi">
+                                <rect key="frame" x="20" y="108" width="374" height="222"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese titulo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXa-1D-eiG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese editorial" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Udy-gB-mmq">
+                                        <rect key="frame" x="0.0" y="64" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese descripcion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qHI-w8-0F7">
+                                        <rect key="frame" x="0.0" y="128" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T28-0X-cGh">
+                                        <rect key="frame" x="0.0" y="192" width="374" height="30"/>
+                                        <state key="normal" title="Guardar"/>
+                                        <connections>
+                                            <action selector="guardarLibro:" destination="33Z-pV-yKI" eventType="touchUpInside" id="CYi-sX-yhN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AwQ-da-5M5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xi8-Ur-Uvi" firstAttribute="leading" secondItem="AwQ-da-5M5" secondAttribute="leading" constant="20" id="Wcq-wF-yEa"/>
+                            <constraint firstItem="AwQ-da-5M5" firstAttribute="trailing" secondItem="xi8-Ur-Uvi" secondAttribute="trailing" constant="20" id="jRH-bH-PB0"/>
+                            <constraint firstItem="xi8-Ur-Uvi" firstAttribute="top" secondItem="AwQ-da-5M5" secondAttribute="top" constant="20" id="seH-in-iP3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4eL-AU-mRy"/>
+                    <connections>
+                        <outlet property="txtDescripcion" destination="qHI-w8-0F7" id="BnF-FK-fxL"/>
+                        <outlet property="txtEditorial" destination="Udy-gB-mmq" id="wlY-Wi-zvU"/>
+                        <outlet property="txtTitulo" destination="gXa-1D-eiG" id="ycc-qo-cy5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryY-zI-beK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3135" y="981"/>
+        </scene>
         <!--Lista de Categorías-->
         <scene sceneID="FYt-7e-Itn">
             <objects>
@@ -453,7 +607,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9t-R4-Lnq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3136" y="350"/>
+            <point key="canvasLocation" x="3135" y="299"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d97-y7-453">
@@ -481,6 +635,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="RTi-p4-4AR"/>
         <segue reference="l6a-uD-Wia"/>
     </inferredMetricsTieBreakers>
     <resources>

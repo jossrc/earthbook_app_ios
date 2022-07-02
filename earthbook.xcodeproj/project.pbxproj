@@ -24,6 +24,11 @@
 		C0479E91286FE2F000D367A0 /* ListaCategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0479E90286FE2F000D367A0 /* ListaCategoriasViewController.swift */; };
 		C0479E94286FE54700D367A0 /* CategoriaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0479E93286FE54700D367A0 /* CategoriaViewCell.swift */; };
 		C0479E97286FFF8A00D367A0 /* JSCategoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0479E96286FFF8A00D367A0 /* JSCategoria.swift */; };
+		C0E97DE328708F7D0039A91F /* ListaLibrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E97DE228708F7D0039A91F /* ListaLibrosViewController.swift */; };
+		C0E97DE628708F9D0039A91F /* LibroViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E97DE528708F9D0039A91F /* LibroViewCell.swift */; };
+		C0E97DE92870953E0039A91F /* JSLibro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E97DE82870953E0039A91F /* JSLibro.swift */; };
+		C0E97DEC287099B80039A91F /* CrudLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E97DEB287099B80039A91F /* CrudLibroViewController.swift */; };
+		C0E97DEF28709B090039A91F /* EarthbookAccionLibro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E97DEE28709B090039A91F /* EarthbookAccionLibro.swift */; };
 		C0F9EDD72856DE2800E37BBD /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9EDD62856DE2800E37BBD /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +52,11 @@
 		C0479E90286FE2F000D367A0 /* ListaCategoriasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCategoriasViewController.swift; sourceTree = "<group>"; };
 		C0479E93286FE54700D367A0 /* CategoriaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaViewCell.swift; sourceTree = "<group>"; };
 		C0479E96286FFF8A00D367A0 /* JSCategoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSCategoria.swift; sourceTree = "<group>"; };
+		C0E97DE228708F7D0039A91F /* ListaLibrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaLibrosViewController.swift; sourceTree = "<group>"; };
+		C0E97DE528708F9D0039A91F /* LibroViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroViewCell.swift; sourceTree = "<group>"; };
+		C0E97DE82870953E0039A91F /* JSLibro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSLibro.swift; sourceTree = "<group>"; };
+		C0E97DEB287099B80039A91F /* CrudLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudLibroViewController.swift; sourceTree = "<group>"; };
+		C0E97DEE28709B090039A91F /* EarthbookAccionLibro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthbookAccionLibro.swift; sourceTree = "<group>"; };
 		C0F9EDD62856DE2800E37BBD /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CB54CCD17B7D4E45F87053A5 /* Pods_earthbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_earthbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2425753B365F6A7FA88ECFC /* Pods-earthbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-earthbook.release.xcconfig"; path = "Target Support Files/Pods-earthbook/Pods-earthbook.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +121,11 @@
 				C00BD7C928701927008C82AC /* Autor.swift */,
 				C00BD7CC287019F8008C82AC /* EarthbookAccion.swift */,
 				C00BD7CF287020A0008C82AC /* JSAutor.swift */,
+				C0E97DE228708F7D0039A91F /* ListaLibrosViewController.swift */,
+				C0E97DE528708F9D0039A91F /* LibroViewCell.swift */,
+				C0E97DE82870953E0039A91F /* JSLibro.swift */,
+				C0E97DEB287099B80039A91F /* CrudLibroViewController.swift */,
+				C0E97DEE28709B090039A91F /* EarthbookAccionLibro.swift */,
 			);
 			path = earthbook;
 			sourceTree = "<group>";
@@ -239,11 +254,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00BD7D0287020A0008C82AC /* JSAutor.swift in Sources */,
+				C0E97DE628708F9D0039A91F /* LibroViewCell.swift in Sources */,
 				C0479E97286FFF8A00D367A0 /* JSCategoria.swift in Sources */,
 				C00BD7CA28701927008C82AC /* Autor.swift in Sources */,
 				9CBDE038284D75080055FA7B /* ViewController.swift in Sources */,
+				C0E97DE328708F7D0039A91F /* ListaLibrosViewController.swift in Sources */,
 				C0F9EDD72856DE2800E37BBD /* HomeController.swift in Sources */,
 				C0479E94286FE54700D367A0 /* CategoriaViewCell.swift in Sources */,
+				C0E97DEF28709B090039A91F /* EarthbookAccionLibro.swift in Sources */,
+				C0E97DE92870953E0039A91F /* JSLibro.swift in Sources */,
 				C00BD7C428700DB9008C82AC /* AutorViewCell.swift in Sources */,
 				9CBDE034284D75080055FA7B /* AppDelegate.swift in Sources */,
 				C00BD7CD287019F8008C82AC /* EarthbookAccion.swift in Sources */,
@@ -252,6 +271,7 @@
 				C0479E91286FE2F000D367A0 /* ListaCategoriasViewController.swift in Sources */,
 				C00BD7C72870144C008C82AC /* CrudAutorViewController.swift in Sources */,
 				9CBDE036284D75080055FA7B /* SceneDelegate.swift in Sources */,
+				C0E97DEC287099B80039A91F /* CrudLibroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
