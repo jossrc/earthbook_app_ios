@@ -15,6 +15,15 @@
 		9CBDE03B284D75080055FA7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBDE039284D75080055FA7B /* Main.storyboard */; };
 		9CBDE03D284D750A0055FA7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBDE03C284D750A0055FA7B /* Assets.xcassets */; };
 		9CBDE040284D750A0055FA7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBDE03E284D750A0055FA7B /* LaunchScreen.storyboard */; };
+		C00BD7C128700D93008C82AC /* ListaAutoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00BD7C028700D93008C82AC /* ListaAutoresViewController.swift */; };
+		C00BD7C428700DB9008C82AC /* AutorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00BD7C328700DB9008C82AC /* AutorViewCell.swift */; };
+		C00BD7C72870144C008C82AC /* CrudAutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00BD7C62870144C008C82AC /* CrudAutorViewController.swift */; };
+		C00BD7CA28701927008C82AC /* Autor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00BD7C928701927008C82AC /* Autor.swift */; };
+		C00BD7CD287019F8008C82AC /* EarthbookAccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00BD7CC287019F8008C82AC /* EarthbookAccion.swift */; };
+		C00BD7D0287020A0008C82AC /* JSAutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00BD7CF287020A0008C82AC /* JSAutor.swift */; };
+		C0479E91286FE2F000D367A0 /* ListaCategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0479E90286FE2F000D367A0 /* ListaCategoriasViewController.swift */; };
+		C0479E94286FE54700D367A0 /* CategoriaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0479E93286FE54700D367A0 /* CategoriaViewCell.swift */; };
+		C0479E97286FFF8A00D367A0 /* JSCategoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0479E96286FFF8A00D367A0 /* JSCategoria.swift */; };
 		C0F9EDD72856DE2800E37BBD /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9EDD62856DE2800E37BBD /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +38,15 @@
 		9CBDE03C284D750A0055FA7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBDE03F284D750A0055FA7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CBDE041284D750A0055FA7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00BD7C028700D93008C82AC /* ListaAutoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaAutoresViewController.swift; sourceTree = "<group>"; };
+		C00BD7C328700DB9008C82AC /* AutorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorViewCell.swift; sourceTree = "<group>"; };
+		C00BD7C62870144C008C82AC /* CrudAutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudAutorViewController.swift; sourceTree = "<group>"; };
+		C00BD7C928701927008C82AC /* Autor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autor.swift; sourceTree = "<group>"; };
+		C00BD7CC287019F8008C82AC /* EarthbookAccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthbookAccion.swift; sourceTree = "<group>"; };
+		C00BD7CF287020A0008C82AC /* JSAutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSAutor.swift; sourceTree = "<group>"; };
+		C0479E90286FE2F000D367A0 /* ListaCategoriasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCategoriasViewController.swift; sourceTree = "<group>"; };
+		C0479E93286FE54700D367A0 /* CategoriaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaViewCell.swift; sourceTree = "<group>"; };
+		C0479E96286FFF8A00D367A0 /* JSCategoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSCategoria.swift; sourceTree = "<group>"; };
 		C0F9EDD62856DE2800E37BBD /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CB54CCD17B7D4E45F87053A5 /* Pods_earthbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_earthbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2425753B365F6A7FA88ECFC /* Pods-earthbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-earthbook.release.xcconfig"; path = "Target Support Files/Pods-earthbook/Pods-earthbook.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +102,15 @@
 				9CBDE041284D750A0055FA7B /* Info.plist */,
 				9CB568E3284DAC9600EB346B /* RegistroController.swift */,
 				C0F9EDD62856DE2800E37BBD /* HomeController.swift */,
+				C0479E90286FE2F000D367A0 /* ListaCategoriasViewController.swift */,
+				C0479E93286FE54700D367A0 /* CategoriaViewCell.swift */,
+				C0479E96286FFF8A00D367A0 /* JSCategoria.swift */,
+				C00BD7C028700D93008C82AC /* ListaAutoresViewController.swift */,
+				C00BD7C328700DB9008C82AC /* AutorViewCell.swift */,
+				C00BD7C62870144C008C82AC /* CrudAutorViewController.swift */,
+				C00BD7C928701927008C82AC /* Autor.swift */,
+				C00BD7CC287019F8008C82AC /* EarthbookAccion.swift */,
+				C00BD7CF287020A0008C82AC /* JSAutor.swift */,
 			);
 			path = earthbook;
 			sourceTree = "<group>";
@@ -211,10 +238,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00BD7D0287020A0008C82AC /* JSAutor.swift in Sources */,
+				C0479E97286FFF8A00D367A0 /* JSCategoria.swift in Sources */,
+				C00BD7CA28701927008C82AC /* Autor.swift in Sources */,
 				9CBDE038284D75080055FA7B /* ViewController.swift in Sources */,
 				C0F9EDD72856DE2800E37BBD /* HomeController.swift in Sources */,
+				C0479E94286FE54700D367A0 /* CategoriaViewCell.swift in Sources */,
+				C00BD7C428700DB9008C82AC /* AutorViewCell.swift in Sources */,
 				9CBDE034284D75080055FA7B /* AppDelegate.swift in Sources */,
+				C00BD7CD287019F8008C82AC /* EarthbookAccion.swift in Sources */,
 				9CB568E4284DAC9600EB346B /* RegistroController.swift in Sources */,
+				C00BD7C128700D93008C82AC /* ListaAutoresViewController.swift in Sources */,
+				C0479E91286FE2F000D367A0 /* ListaCategoriasViewController.swift in Sources */,
+				C00BD7C72870144C008C82AC /* CrudAutorViewController.swift in Sources */,
 				9CBDE036284D75080055FA7B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

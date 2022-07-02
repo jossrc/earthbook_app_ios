@@ -239,7 +239,7 @@
             </objects>
             <point key="canvasLocation" x="1668.1159420289857" y="87.723214285714278"/>
         </scene>
-        <!--Home Controller-->
+        <!--Menu de Opciones-->
         <scene sceneID="8YR-2v-VVI">
             <objects>
                 <viewController id="Qh3-bb-FPS" customClass="HomeController" customModule="earthbook" customModuleProvider="target" sceneMemberID="viewController">
@@ -255,13 +255,19 @@
                                         <state key="normal" title="Mantenimiento Autor">
                                             <color key="titleColor" red="0.24982088799999999" green="0.67868143319999996" blue="0.53682649140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="gef-e5-RMb" kind="show" id="Nwq-33-Vj6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG2-2Y-qfc">
                                         <rect key="frame" x="0.0" y="120" width="354" height="30"/>
-                                        <state key="normal" title="Mantenimiento Categoria">
+                                        <state key="normal" title="Lista de Categoria">
                                             <color key="titleColor" red="0.24982088799999999" green="0.67868143319999996" blue="0.53682649140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" systemColor="systemGrayColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="oo1-ap-LFv" kind="show" id="LIA-mY-Me3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-Hv-Uk6">
                                         <rect key="frame" x="0.0" y="240" width="354" height="30"/>
@@ -280,11 +286,174 @@
                             <constraint firstItem="M1E-eV-LV3" firstAttribute="top" secondItem="DU1-M4-tOw" secondAttribute="top" constant="30" id="z1V-aC-2m0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vAe-uM-xLQ"/>
+                    <navigationItem key="navigationItem" title="Menu de Opciones" id="vAe-uM-xLQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTE-cD-4IY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2371" y="88"/>
+        </scene>
+        <!--Lista Autores View Controller-->
+        <scene sceneID="ZUU-wV-3m9">
+            <objects>
+                <tableViewController id="gef-e5-RMb" customClass="ListaAutoresViewController" customModule="earthbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ng5-If-dh9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAutor" textLabel="lsl-Rk-BH0" detailTextLabel="rNd-Fz-MJS" style="IBUITableViewCellStyleValue1" id="LO6-GW-wni" customClass="AutorViewCell" customModule="earthbook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LO6-GW-wni" id="yXj-nr-6kK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lsl-Rk-BH0">
+                                            <rect key="frame" x="20" y="12" width="33" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rNd-Fz-MJS">
+                                            <rect key="frame" x="350" y="12" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblIdAutor" destination="lsl-Rk-BH0" id="nNR-aT-u8a"/>
+                                    <outlet property="lblNombreAutor" destination="rNd-Fz-MJS" id="8V8-lm-Upj"/>
+                                    <segue destination="mLA-c5-J9P" kind="show" id="l6a-uD-Wia"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gef-e5-RMb" id="MY8-gd-N8T"/>
+                            <outlet property="delegate" destination="gef-e5-RMb" id="Svr-CR-HQZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="crJ-87-ih3">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="DE1-py-ASF">
+                                <connections>
+                                    <segue destination="mLA-c5-J9P" kind="show" id="Kg5-ef-mfK"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="haL-36-flX">
+                                <connections>
+                                    <action selector="RefrescarAutor:" destination="gef-e5-RMb" id="lRs-3H-Q2L"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDc-rH-ere" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3135" y="-344"/>
+        </scene>
+        <!--Crud Autor View Controller-->
+        <scene sceneID="HW6-Zw-z4n">
+            <objects>
+                <viewController id="mLA-c5-J9P" customClass="CrudAutorViewController" customModule="earthbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3J8-MA-c56">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="VGn-ou-ipA">
+                                <rect key="frame" x="20" y="118" width="374" height="103"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWd-ac-agy">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Biografia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zSX-fk-4dI">
+                                        <rect key="frame" x="0.0" y="69" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2V-8b-7tu">
+                                <rect key="frame" x="180" y="264" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Agregar"/>
+                                <connections>
+                                    <action selector="GuardarAutor:" destination="mLA-c5-J9P" eventType="touchUpInside" id="HXW-Ye-D09"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="189-7X-v9u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VGn-ou-ipA" firstAttribute="top" secondItem="189-7X-v9u" secondAttribute="top" constant="30" id="Pd4-f8-6eN"/>
+                            <constraint firstItem="189-7X-v9u" firstAttribute="trailing" secondItem="VGn-ou-ipA" secondAttribute="trailing" constant="20" id="ZLC-BI-hCc"/>
+                            <constraint firstItem="VGn-ou-ipA" firstAttribute="leading" secondItem="189-7X-v9u" secondAttribute="leading" constant="20" id="pH3-Zu-1A5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uix-9d-xbH"/>
+                    <connections>
+                        <outlet property="txtBiografia" destination="zSX-fk-4dI" id="Uia-Ht-P8K"/>
+                        <outlet property="txtNombre" destination="VWd-ac-agy" id="evl-YX-LHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WeJ-gF-AwV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3945" y="-344"/>
+        </scene>
+        <!--Lista de Categorías-->
+        <scene sceneID="FYt-7e-Itn">
+            <objects>
+                <tableViewController id="oo1-ap-LFv" customClass="ListaCategoriasViewController" customModule="earthbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="t42-Qm-0HL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellcategoria" textLabel="CIE-ip-Yhp" detailTextLabel="v3b-VE-fS9" style="IBUITableViewCellStyleValue1" id="59o-PP-7aE" customClass="CategoriaViewCell" customModule="earthbook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="59o-PP-7aE" id="xJ7-k6-IBc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CIE-ip-Yhp">
+                                            <rect key="frame" x="20" y="12" width="33" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v3b-VE-fS9">
+                                            <rect key="frame" x="350" y="12" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="txtIdCategoria" destination="CIE-ip-Yhp" id="dts-Qb-hih"/>
+                                    <outlet property="txtNombreCategoria" destination="v3b-VE-fS9" id="6dl-B6-9dP"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oo1-ap-LFv" id="c3b-Ll-t9Y"/>
+                            <outlet property="delegate" destination="oo1-ap-LFv" id="AV5-VO-s6a"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lista de Categorías" id="7sn-n2-dDw"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9t-R4-Lnq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3136" y="350"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d97-y7-453">
@@ -311,6 +480,9 @@
             <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="l6a-uD-Wia"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
